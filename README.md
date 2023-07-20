@@ -13,9 +13,8 @@
 ├── env                 // Virtual Environment
 ├── README.md           // This file
 └── requirements.txt    // Python dependencies
-
-11 directories, 5 files=
 ```
+
 ### Installation
 
 Clone repo
@@ -30,5 +29,17 @@ Make a virtual environment
 Install dependencies
 `pip install -r requirements.txt`
 
+Install the frontend
+`npm install`
+
+Build the frontend
+`cd /app/client`
+`npm build`
+
 Run the server locally
 `cd app && python manage.py runserver`
+
+
+### Making Changes
+
+The React frontend is served by the file `app/client/build/index.html`, so to make changes to the frontend run `npm run build` from `app/client`
