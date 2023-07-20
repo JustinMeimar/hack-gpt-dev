@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
-# Create your views here.
-from django.shortcuts import render
-from .models import Painting
+@api_view(['POST'])
+def prompt_endpoint(request):
+    
+    prompt = request.query_params.get('prompt', None)
 
-def image_gallery(request):
-    images = Painting.objects.all()
-    return render(request, 'api/gallery.html', {'images' : images})
+    if prompt: 
+        return Response({'prompt': prompt})
+    else: 
+        return Response({'error': 'prompt was not receieved or did not process'})

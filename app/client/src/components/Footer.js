@@ -6,7 +6,7 @@ const Footer = () => {
         <Navbar fixed="bottom" bg="light">
             <Container>
                 <Navbar.Text>
-                    Footer Content Here
+                    Hack GPT
                 </Navbar.Text>
             </Container>
         </Navbar>

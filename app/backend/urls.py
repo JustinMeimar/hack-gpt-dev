@@ -24,10 +24,3 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('', TemplateView.as_view(template_name='index.html'), name='index'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-# if settings.DEBUG:
-#     urlpatterns += [
-#         path('static/<path>', serve, {
-#             'document_root': settings.STATIC_ROOT,
-#         }),
-#     ]
