@@ -6,7 +6,7 @@ const Footer = () => {
         <Navbar fixed="bottom" bg="light">
             <Container>
                 <Navbar.Text>
-                    Hack GPT
+                    Hack GPT 2023
                 </Navbar.Text>
             </Container>
         </Navbar>
