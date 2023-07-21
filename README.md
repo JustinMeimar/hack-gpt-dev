@@ -39,6 +39,12 @@ Build the frontend
 Run the server locally
 `cd app && python manage.py runserver`
 
+### OpenAI Authentication
+Create the file `app/api/llm/.env` and add the OpenAI Credentials in the form
+```
+OPENAI_API_KEY = <"OPEN_AI_API_KEY">
+OPENAI_ORG_ID = "<"OPENAI_ORG_ID">
+```  
 
 ### Making Changes
 
